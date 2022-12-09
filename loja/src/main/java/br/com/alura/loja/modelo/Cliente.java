@@ -20,6 +20,12 @@ public class Cliente {
 
 	}
 
+	public Cliente(String nome, String cpf) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+	}
+
 	public Long getId() {
 		return id;
 	}
