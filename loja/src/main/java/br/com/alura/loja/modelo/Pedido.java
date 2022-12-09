@@ -29,7 +29,7 @@ public class Pedido {
 	@ManyToOne
 	private Cliente cliente;
 
-	@OneToMany(mappedBy = "pedido" , cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
 	private List<ItemPedido> itens = new ArrayList<>();
 
 	public Pedido() {
