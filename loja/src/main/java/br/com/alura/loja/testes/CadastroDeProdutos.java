@@ -19,10 +19,14 @@ public class CadastroDeProdutos {
 
 		em.flush();
 		em.clear();
-		
+
 		celulares = em.merge(celulares);
 		celulares.setNome("Aparelho Celulares");
 		em.flush();
+		em.clear();
+		em.remove(celulares);
+		em.flush();
+
 	}
 
 }
