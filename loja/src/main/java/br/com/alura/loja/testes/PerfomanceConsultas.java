@@ -19,7 +19,9 @@ public class PerfomanceConsultas {
 		popularBancoDeDados();
 		EntityManager em = JPAUtil.getEntityManager();
 		Pedido pedido = em.find(Pedido.class, 1l);
-		System.out.println(pedido.getItens().size());
+		
+		em.close();
+		System.out.println(pedido.getCliente().getNome());
 	}
 
 	private static void popularBancoDeDados() {
