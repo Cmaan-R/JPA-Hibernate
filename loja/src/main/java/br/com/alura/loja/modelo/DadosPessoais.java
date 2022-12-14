@@ -1,6 +1,13 @@
 package br.com.alura.loja.modelo;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class DadosPessoais {
+
+	public DadosPessoais() {
+
+	}
 
 	public DadosPessoais(String nome, String cpf) {
 		this.nome = nome;
